@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zaina Boutique | Elegant Ladies Clothing</title>
+  <meta name="description" content="Zaina Boutique — elegant ladies clothing. Shop winter, summer, casual and fancy collections." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Jost:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22%3E%3Ccircle cx=%2250%22 cy=%2250%22 r=%2250%22 fill=%22%234b2a3a%22/%3E%3Ctext x=%2250%22 y=%2268%22 font-size=%2254%22 text-anchor=%22middle%22 fill=%22%23f4e6df%22 font-family=%22serif%22 font-style=%22italic%22%3EZ%3C/text%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="announce">
+    <div class="announce-track">
+      <span><i class="fa-solid fa-truck-fast"></i> Free delivery across Pakistan on orders above Rs. 5,000</span>
+      <span><i class="fa-solid fa-gift"></i> New Winter Collection is live — up to 30% off</span>
+      <span><i class="fa-solid fa-rotate-left"></i> Easy 7-day exchange</span>
+      <span><i class="fa-solid fa-truck-fast"></i> Free delivery across Pakistan on orders above Rs. 5,000</span>
+      <span><i class="fa-solid fa-gift"></i> New Winter Collection is live — up to 30% off</span>
+      <span><i class="fa-solid fa-rotate-left"></i> Easy 7-day exchange</span>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Menu"><i class="fa-solid fa-bars-staggered"></i></button>
+      <a href="#home" class="logo"><span class="logo-script">Zaina</span><span class="logo-sub">Boutique</span></a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" class="active">Home</a>
+        <a href="#winter">Winter</a>
+        <a href="#summer">Summer</a>
+        <a href="#casual">Casual</a>
+        <a href="#fancy">Fancy</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="searchBtn" aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+        <button class="icon-btn" id="wishBtn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="badge" id="wishCount">0</span></button>
+        <button class="icon-btn" id="cartBtn" aria-label="Cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge" id="cartCount">0</span></button>
+      </div>
+    </div>
+    <div class="search-bar" id="searchBar">
+      <div class="container">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" placeholder="Search dresses, e.g. gown, coat, maxi..." />
+        <button id="closeSearch" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="container search-results" id="searchResults"></div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <span class="tagline">New Season · 2026 Collection</span>
+        <h1>Grace in Every <em>Thread</em></h1>
+        <p>Discover handpicked ladies clothing — cosy winter wear, breezy summer dresses, everyday casuals and show-stopping fancy outfits, all crafted to make you feel beautiful.</p>
+        <div class="hero-btns">
+          <a href="#fancy" class="btn btn-dark">Shop Collection <i class="fa-solid fa-arrow-right-long"></i></a>
+          <a href="#winter" class="btn btn-line">Winter Sale</a>
+        </div>
+        <div class="hero-meta">
+          <div><strong>40+</strong><span>Exclusive Designs</span></div>
+          <div><strong>15K</strong><span>Happy Clients</span></div>
+          <div><strong>4.9 <i class="fa-solid fa-star"></i></strong><span>Customer Rating</span></div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-frame main"><img src="images/f1.jpg" alt="Ivory embroidered anarkali" /></div>
+        <div class="hero-frame side top"><img src="images/f3.jpg" alt="Scarlet gown" /></div>
+        <div class="hero-frame side bottom"><img src="images/s3.jpg" alt="Blue maxi dress" /></div>
+        <div class="hero-chip"><i class="fa-solid fa-gem"></i><div><strong>Premium Fabrics</strong><span>Silk · Chiffon · Velvet</span></div></div>
+        <div class="hero-ring"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Category cards -->
+  <section class="section categories">
+    <div class="container">
+      <div class="head">
+        <span class="tagline">Shop by Category</span>
+        <h2>Find Your <em>Style</em></h2>
+      </div>
+      <div class="cat-grid">
+        <a href="#winter" class="cat-card"><img src="images/w5.jpg" alt="Winter collection" /><div class="cat-info"><h3>Winter</h3><span>Coats · Knits · Shawls</span><i class="fa-solid fa-arrow-right-long"></i></div></a>
+        <a href="#summer" class="cat-card"><img src="images/s3.jpg" alt="Summer collection" /><div class="cat-info"><h3>Summer</h3><span>Maxis · Florals · Lawn</span><i class="fa-solid fa-arrow-right-long"></i></div></a>
+        <a href="#casual" class="cat-card"><img src="images/c7.jpg" alt="Casual collection" /><div class="cat-info"><h3>Casual</h3><span>Tees · Co-ords · Denim</span><i class="fa-solid fa-arrow-right-long"></i></div></a>
+        <a href="#fancy" class="cat-card"><img src="images/f2.jpg" alt="Fancy collection" /><div class="cat-info"><h3>Fancy</h3><span>Gowns · Sarees · Formals</span><i class="fa-solid fa-arrow-right-long"></i></div></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features strip -->
+  <section class="perks">
+    <div class="container perks-grid">
+      <div><i class="fa-solid fa-truck-fast"></i><h4>Free Shipping</h4><p>On orders above Rs. 5,000</p></div>
+      <div><i class="fa-solid fa-scissors"></i><h4>Custom Stitching</h4><p>Tailored to your size</p></div>
+      <div><i class="fa-solid fa-rotate-left"></i><h4>Easy Exchange</h4><p>7-day hassle-free returns</p></div>
+      <div><i class="fa-solid fa-shield-heart"></i><h4>Secure Payment</h4><p>COD, card & bank transfer</p></div>
+    </div>
+  </section>
+
+  <!-- Collection sections (rendered by JS) -->
+  <div id="collections"></div>
+
+  <!-- Offer banner -->
+  <section class="offer">
+    <div class="container offer-inner">
+      <div class="offer-img"><img src="images/f4.jpg" alt="Bridal silk saree" /></div>
+      <div class="offer-text">
+        <span class="tagline light">Limited Time Offer</span>
+        <h2>The Festive Edit — <em>Flat 25% Off</em></h2>
+        <p>Make every celebration unforgettable with our handcrafted sarees, gowns and embroidered suits. Use code <b>ZAINA25</b> at checkout.</p>
+        <div class="timer" id="timer">
+          <div><strong id="dd">00</strong><span>Days</span></div>
+          <div><strong id="hh">00</strong><span>Hours</span></div>
+          <div><strong id="mm">00</strong><span>Mins</span></div>
+          <div><strong id="ss">00</strong><span>Secs</span></div>
+        </div>
+        <a href="#fancy" class="btn btn-light">Shop the Edit <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="section about" id="about">
+    <div class="container about-grid">
+      <div class="about-imgs">
+        <img src="images/store-rack.jpg" alt="Zaina Boutique racks" class="a1" />
+        <img src="images/rack-floral.jpg" alt="Floral dresses" class="a2" />
+        <div class="since"><span>Since</span><strong>2016</strong></div>
+      </div>
+      <div class="about-text">
+        <span class="tagline">Our Story</span>
+        <h2>Where Elegance Meets <em>Everyday</em></h2>
+        <p>Zaina Boutique began with a simple dream — to bring beautifully crafted, affordable fashion to every woman. From delicate embroidery to modern silhouettes, every piece is chosen with love and attention to detail.</p>
+        <p>Whether it's a cosy winter evening, a sunny day out, or the wedding of the year, we have the perfect outfit waiting for you.</p>
+        <div class="about-stats">
+          <div><strong>10+</strong><span>Years of Fashion</span></div>
+          <div><strong>500+</strong><span>Designs Launched</span></div>
+          <div><strong>3</strong><span>Store Locations</span></div>
+        </div>
+        <a href="#contact" class="btn btn-dark">Visit Our Store <i class="fa-solid fa-arrow-right-long"></i></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section reviews">
+    <div class="container">
+      <div class="head">
+        <span class="tagline">Testimonials</span>
+        <h2>Loved by Our <em>Customers</em></h2>
+      </div>
+      <div class="review-grid">
+        <div class="review"><div class="stars">★★★★★</div><p>“The anarkali I ordered for my sister's mehndi was absolutely stunning. Fabric quality is amazing and the fitting was perfect!”</p><div class="who"><span>AH</span><div><strong>Ayesha Hassan</strong><small>Lahore</small></div></div></div>
+        <div class="review"><div class="stars">★★★★★</div><p>“Fast delivery and beautiful packaging. The winter coat is so warm and stylish — I've already ordered two more pieces.”</p><div class="who"><span>MF</span><div><strong>Maryam Farooq</strong><small>Karachi</small></div></div></div>
+        <div class="review"><div class="stars">★★★★★</div><p>“My go-to boutique for casual wear. Great prices, trendy designs and the staff is super helpful on WhatsApp.”</p><div class="who"><span>HN</span><div><strong>Hira Naveed</strong><small>Islamabad</small></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Instagram -->
+  <section class="insta">
+    <div class="head">
+      <span class="tagline">@zainaboutique</span>
+      <h2>Follow Us on <em>Instagram</em></h2>
+    </div>
+    <div class="insta-grid">
+      <a href="#"><img src="images/f6.jpg" alt="" /><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><img src="images/s7.jpg" alt="" /><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><img src="images/w3.jpg" alt="" /><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><img src="images/f9.jpg" alt="" /><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><img src="images/c11.jpg" alt="" /><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><img src="images/f11.jpg" alt="" /><i class="fa-brands fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="section contact" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <span class="tagline">Get in Touch</span>
+        <h2>Visit or <em>Message Us</em></h2>
+        <p>Have a question about sizing, custom stitching or an order? We're happy to help.</p>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i><div><strong>Flagship Store</strong><span>MM Alam Road, Gulberg III, Lahore</span></div></li>
+          <li><i class="fa-brands fa-whatsapp"></i><div><strong>WhatsApp</strong><span>+92 300 0000000</span></div></li>
+          <li><i class="fa-regular fa-envelope"></i><div><strong>Email</strong><span>hello@zainaboutique.pk</span></div></li>
+          <li><i class="fa-regular fa-clock"></i><div><strong>Store Hours</strong><span>Mon – Sun: 11:00 AM – 10:00 PM</span></div></li>
+        </ul>
+      </div>
+      <form class="contact-form" id="contactForm">
+        <h3>Send a Message</h3>
+        <div class="row"><input type="text" placeholder="Your Name" required /><input type="tel" placeholder="Phone" required /></div>
+        <input type="email" placeholder="Email Address" required />
+        <select required><option value="">Subject</option><option>Order Inquiry</option><option>Custom Stitching</option><option>Exchange / Return</option><option>Other</option></select>
+        <textarea rows="4" placeholder="Your message" required></textarea>
+        <button class="btn btn-dark full" type="submit">Send Message <i class="fa-regular fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container news-inner">
+      <div><h3>Join the Zaina Club</h3><p>Get 10% off your first order plus early access to new collections.</p></div>
+      <form id="newsForm"><input type="email" placeholder="Enter your email" required /><button class="btn btn-dark" type="submit">Subscribe</button></form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container foot-grid">
+      <div>
+        <a href="#home" class="logo light"><span class="logo-script">Zaina</span><span class="logo-sub">Boutique</span></a>
+        <p>Elegant ladies clothing for every season and every occasion. Made with love in Pakistan.</p>
+        <div class="socials"><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a><a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a><a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a></div>
+      </div>
+      <div><h4>Shop</h4><a href="#winter">Winter Collection</a><a href="#summer">Summer Collection</a><a href="#casual">Casual Wear</a><a href="#fancy">Fancy & Formal</a></div>
+      <div><h4>Help</h4><a href="#contact">Contact Us</a><a href="#contact">Size Guide</a><a href="#contact">Shipping Info</a><a href="#contact">Returns & Exchange</a></div>
+      <div><h4>We Accept</h4><div class="pay"><i class="fa-brands fa-cc-visa"></i><i class="fa-brands fa-cc-mastercard"></i><i class="fa-solid fa-money-bill-wave"></i><i class="fa-solid fa-building-columns"></i></div><p class="small">Cash on Delivery available nationwide.</p></div>
+    </div>
+    <div class="foot-bottom">© <span id="year"></span> Zaina Boutique. All rights reserved.</div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay"></div>
+  <aside class="drawer" id="cartDrawer">
+    <div class="drawer-head"><h3>Shopping Bag</h3><button class="icon-btn" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot">
+      <div class="line"><span>Subtotal</span><strong id="subtotal">Rs. 0</strong></div>
+      <div class="line"><span>Shipping</span><strong id="shipping">Rs. 0</strong></div>
+      <div class="line total"><span>Total</span><strong id="total">Rs. 0</strong></div>
+      <button class="btn btn-dark full" id="checkout">Checkout <i class="fa-solid fa-lock"></i></button>
+    </div>
+  </aside>
+  <aside class="drawer" id="wishDrawer">
+    <div class="drawer-head"><h3>Wishlist</h3><button class="icon-btn" data-close aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
+    <div class="drawer-body" id="wishItems"></div>
+  </aside>
+
+  <!-- Quick view modal -->
+  <div class="modal" id="modal">
+    <div class="modal-box">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-img"><img id="mImg" src="" alt="" /></div>
+      <div class="modal-info">
+        <span class="tagline" id="mCat"></span>
+        <h3 id="mName"></h3>
+        <div class="m-rating" id="mRating"></div>
+        <div class="m-price" id="mPrice"></div>
+        <p id="mDesc"></p>
+        <div class="sizes"><span>Size:</span><div id="mSizes"></div></div>
+        <div class="m-actions">
+          <div class="qty"><button id="qMinus">−</button><span id="qVal">1</span><button id="qPlus">+</button></div>
+          <button class="btn btn-dark" id="mAdd">Add to Bag <i class="fa-solid fa-bag-shopping"></i></button>
+        </div>
+        <ul class="m-notes"><li><i class="fa-solid fa-truck"></i> Delivery in 3–5 working days</li><li><i class="fa-solid fa-rotate-left"></i> 7-day easy exchange</li></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+  <script src="script.js"></script>
+</body>
+</html>
